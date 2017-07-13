@@ -31,7 +31,7 @@ let History = React.createClass({
 			<div className="container">
 				<div className="row row-result-title">
 					<div className="col col-sm-12 col-result-title">
-						<h2 className="text-right"><i className="fa fa-bullseye"></i>   you have saved {this.props.articlesMongo.length} articles</h2>
+						<h2 className="text-center">You have saved {this.props.articlesMongo.length} articles</h2>
 					</div>{/* end col-sm-12 */}
 				</div>{/* end row */}
 

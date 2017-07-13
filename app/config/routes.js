@@ -20,8 +20,8 @@ var IndexRoute = router.IndexRoute;
 
 // Reference the high-level components
 var Search = require("../components/children/search");
-var Results = require("../components/results");
-var History = require("../components/history");
+var Results = require("../components/children/results");
+var History = require("../components/children/history");
 
 
 // Export the Routes

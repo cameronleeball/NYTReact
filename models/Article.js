@@ -10,19 +10,19 @@ mongoose.Promise	= Promise;
 var Schema = mongoose.Schema;
 
 var ArticleSchema = new Schema ({
-	title: {
+	headline: {
 		type: String,
 		trim: true
 	},
-	author: {
+	byline: {
 		type: String,
 		trim: true
 	}, 
-	date: {
+	pub_date: {
 		type: Date,
 		trim: true
 	},
-	url: {
+	web_url: {
 		type: String,
 		trim: true,
 		unique: true,

@@ -74,5 +74,5 @@ app.delete('/api/saved', function(req, res) {
 
 // Starting our express server
 app.listen(PORT, function() {
-  console.log("server.js listening to your mom on PORT: " + PORT);
+  console.log("Server is listening on PORT: " + PORT);
 });

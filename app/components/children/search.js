@@ -39,7 +39,7 @@ let Search = React.createClass({
   	this.props._nytGet(this.state.q, this.state.begin_date, this.state.end_date);
   	this.setState({
   		q: "",
-  		begin_date: "19500101",
+  		begin_date: "201671231",
   		end_date: "20171231", 
   	});
     this.props._toggleResults();
@@ -51,13 +51,13 @@ let Search = React.createClass({
 		<div className="container">
       <div className="row row-search-title">
         <div className="col col-sm-12 col-search-title">
-              <h2><i className="fa fa-search"></i>Article Search</h2>
+              <h2>New York Times Article Search</h2>
         </div>{/* end col-sm-12 */}
       </div>{/* end row */}
       <div className="row row-search-results">
         <form onSubmit={this._handleSubmit}>
           <div className="col col-sm-3 col-search-results">
-            <label htmlFor="query">Seaach</label><br />
+            <label htmlFor="query">Search</label><br />
             <input 
           	 value={this.state.q}
           	 type="text" 
@@ -100,19 +100,5 @@ let Search = React.createClass({
     );
   }
 });
-
-
-
-{/* const viewArticles = this.state.articles.map((item, i) => {
-      return <div>
-        <h1>{item.name.first}</h1>
-        <span>{item.cell}, {item.email}</span>
-      </div>
-    });
-
-    return <div id="layout-content" className="layout-content-wrapper">
-      <div className="panel-list">{viewArticles}</div>
-    </div>
-    */}
 
 module.exports 	= Search;
